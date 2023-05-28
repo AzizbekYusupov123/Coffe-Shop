@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COFFEE SHOP</title>
+    <style>
+        .photo img {
+            height: 600px;
+            width: 600px;
+            margin-left: 150px;
+        }
+
+        div {
+            display: inline-block;
+        }
+
+        .div1 {
+            display: flex;
+            align-items: center;
+        }
+
+        .photo {
+            display: inline-block;
+        }
+
+        body {
+            padding: 30px;
+            background-color: #14110E;
+        }
+
+        h4, h1{
+            text-align: center;
+        }
+
+        .maindiv {
+            width: 600px;
+            height: 600px;
+            display: inline-block;
+            margin: 0;
+        }
+
+        .divH1{
+            display: inline-block;
+        }
+
+        h4 {
+            color: #C99E71;
+            font-family: sans-serif;
+            position: relative;
+            left: 55px;
+        }
+
+        h1 {
+            position: relative;
+            left: 60px;
+            color: white;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+        button {
+            background-color:#C99E71;
+            border: 2px solid #C99E71;
+            color: white;
+            width: 180px;
+            height: 40px;
+            margin-left: 250px;
+        }
+
+        input {
+            background-color:  #14110E;
+            border-color:  #14110E;
+            width: 500px;
+            height: 40px;
+            color: white;
+            margin-left: 100px;
+        }
+
+        @media only screen and (max-width: 390px) {
+            .divH1 {
+                width: 100%;
+                display: block;
+                position: relative;
+                right: 450px;
+            }   
+         
+            .registration {
+                display: block;
+                position: absolute;
+                right: 150px;
+            }
+
+            .photo {
+                position: relative;
+                top: 800px;
+                left: 200px;
+            }
+
+            button {
+                position: relative;
+                right: 440px;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="div1">
+        <div class="photo">
+            <img src="../images/photo_2023-04-28_06-44-30.jpg" alt="not found">
+        </div>
+      <div class="maindiv">
+        <div class="divH1" style="display: block;">
+            <h4>
+                Reservation
+            </h4>
+            <h1>
+                Booking a table
+            </h1><br><br><br><br>
+        </div>
+        <div>
+            <div class="registration" style="display: block;">
+                    <label for="name"></label>
+                    <input type="text" placeholder="4.Person"><br><br><br><br><br>
+
+                    <label for="date"></label>
+                    <input type="text" placeholder="12.25.2023"><br><br><br><br><br>
+
+                    <label for="time"></label>
+                    <input type="text" placeholder="11:00 AM"><br><br><br><br><br>
+            </div>
+                <button>
+                    BOOK S TABLE 
+                </button>
+        </div>
+      </div>
+    </div>
+
+    
+</body>
+
+</html>
